@@ -40,7 +40,7 @@ position = document.getElementById('content');
 for(var i = 0; i < array.length; i++){
 	array[i] = calculateSTI(array[i]);
  	newEl = document.createElement('li');
-	newText = document.createTextNode(array[i].name + " " + array[i].bonus + " " +  array[i].adjustedIncome + " " + array[i].basePercent);
+	newText = document.createTextNode("Name: " + array[i].name + " | Bonus: " + array[i].bonus + " | Income: $" +  array[i].adjustedIncome + " | Raise: $" + array[i].basePercent);
 	newEl.appendChild(newText);
 	position.appendChild(newEl);
 }
